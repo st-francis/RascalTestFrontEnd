@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A new method towards Choreographic Programming</title>
+    <!-- Include CodeMirror CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.64.1/codemirror.min.css">
+    <!-- Include CodeMirror JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.64.1/codemirror.min.js"></script>
+</head>
+<body>
+    <div id="editor-container">
+        <!-- Editor and save button -->
+        <textarea id="editor"></textarea>
+        <button onclick="saveFile()">Save</button>
+    </div>
+    <div id="info-container">
+        <!-- Display processed information here -->
+    </div>
+
+    <script src="basiceditor.jsx">
+        function saveFile() {
+            // Get content of the editor
+            var content = document.getElementById('editor').value;
+
+            // Send content to backend for processing
+            // Use AJAX (e.g., fetch API) to send content to backend endpoint
+            // Once processed, update the info-container with the fetched information
+        }
+    </script>
+</body>
+</html>
